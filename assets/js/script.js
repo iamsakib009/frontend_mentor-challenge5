@@ -11,11 +11,13 @@ const minusBtn = document.querySelector("#btn-minus");
 const plusBtn = document.querySelector("#btn-plus");
 const productCounter = document.querySelector(".counter");
 // Gallery
-const manImg = document.querySelector(".product-img");
-const thumbSingleImg = document.querySelector(".image");
+const mainImg = document.querySelector(".product-img");
+const thumbSingleImg = document.querySelectorAll(".image");
 
 // Initial count
 let counterValue = 1;
+
+// All Event Listeners
 
 // Show Menu
 btnHamburger.addEventListener("click", () => {
@@ -42,10 +44,24 @@ plusBtn.addEventListener("click", () => {
 minusBtn.addEventListener("click", () => {
   setProductCounter(-1);
 });
+// thumb Image
 
+// Functions
 const setProductCounter = (value) => {
   if (counterValue + value > 0) {
     counterValue += value;
     productCounter.innerHTML = counterValue;
   }
 };
+
+const onThumbSingleImgClick = (event) => {
+  thumbSingleImg.forEach((img) => {
+    img.classList.remove("active");
+  });
+  event.target.parentElement.classList.add("active");
+  // update main image
+  mainImg.src = event.target.src.replace("-thumbnail", "");
+};
+thumbSingleImg.forEach((img) => {
+  img.addEventListener("click", onThumbSingleImgClick);
+});
