@@ -34,6 +34,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1.5rem 2.3rem 2.3rem 2rem;
+  position: relative;
 }
 .hamburger-logo-group {
   display: flex;
@@ -62,14 +63,76 @@ body {
   justify-content: space-around;
   gap: 2.2rem;
 }
-.cart {
+.main-cart {
   cursor: pointer;
-  position: relative;
+  position: absolute;
+  right: 1rem;
+  top: calc(calc(100%) + 1rem);
+  z-index: 1;
+  background-color: var(--white);
+  width: 35.5rem;
+  border-radius: 1rem;
+}
+.cart-top {
+  border-bottom: 1px solid var(--grayish-blue);
+  padding: 2rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.item {
+  margin: 2.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cart-inside-img {
+  width: 4.8rem;
+  border-radius: 0.5rem;
+}
+.details {
+  color: var(--dark-grayish-blue);
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+}
+.price-group {
+  display: flex;
+  gap: 0.6rem;
+}
+.tatal-amount {
+  font-weight: 700;
+  font-size: 1.7rem;
+  color: var(--black);
+}
+.empty-msg {
+  color: var(--dark-grayish-blue);
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding: 7.8rem 0;
+}
+#btn-delete {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+#btn-delete:hover {
+  cursor: pointer;
+  background-color: var(--pale-orange);
+}
+.checkout {
+  background-color: var(--orange);
+  color: var(--white);
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 3.4rem;
+  padding: 1.8rem;
+  border-radius: 1rem;
+  cursor: pointer;
 }
 .cart-count {
   position: absolute;
-  top: -30%;
-  right: -30%;
+  top: -25%;
+  right: -25%;
   background-color: var(--orange);
   color: var(--white);
   font-size: 1rem;

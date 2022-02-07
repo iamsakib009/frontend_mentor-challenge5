@@ -11,3 +11,10 @@ btnHamburger.addEventListener("click", () => {
 btnClose.addEventListener("click", () => {
   menu.classList.add("hidden");
 });
+
+// Show and Hide Cart
+const cartBtn = document.querySelector(".cart");
+const mainCart = document.querySelector(".main-cart");
+cartBtn.addEventListener("click", () => {
+  mainCart.classList.toggle("hidden");
+});
