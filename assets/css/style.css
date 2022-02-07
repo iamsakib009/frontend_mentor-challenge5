@@ -28,7 +28,7 @@ html {
 body {
   font-family: "Kumbh Sans", sans-serif;
 }
-.header {
+.header-content {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -320,4 +320,81 @@ body {
 .cart-img {
   height: 1.5rem;
   filter: brightness(350%);
+}
+/* Media Queries 1440px */
+@media screen and (min-width: 1440px) {
+  .header {
+    width: 78%;
+    margin: 0 auto;
+  }
+  .header-content {
+    padding: 0;
+    border-bottom: 1px solid var(--grayish-blue);
+  }
+  .hamburger {
+    display: none;
+  }
+  .hamburger-logo-group {
+    gap: 5.4rem;
+  }
+  .menu {
+    display: block;
+    position: unset;
+    height: unset;
+  }
+  .side-menu {
+    width: unset;
+    padding: 0;
+  }
+  .side-menu-img {
+    display: none;
+  }
+  .menu-item {
+    flex-direction: row;
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--dark-grayish-blue);
+    gap: 3.5rem;
+  }
+  .menu-link {
+    display: block;
+    padding: 4rem 0;
+    border-bottom: 3px solid transparent;
+  }
+  .menu-link:hover {
+    color: var(--very-dark-blue);
+    text-decoration: none;
+    font-weight: 700;
+    border-bottom: 3px solid var(--orange);
+  }
+  .cart-avatar-group {
+    gap: 4.5rem;
+  }
+  .profile-img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+  }
+  .cart {
+    right: -7rem;
+    top: 90%;
+  }
+  .lightbox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10rem;
+    padding: 9rem 5rem;
+  }
+  .product-content {
+    width: 100%;
+  }
+  .product-img {
+    border-radius: 1.5rem;
+  }
+  .previous,
+  .next {
+    display: none;
+  }
 }

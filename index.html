@@ -23,138 +23,144 @@
   </head>
   <body>
     <header class="header">
-      <div class="hamburger-logo-group">
-        <div class="hamburger">
-          <div class="hamburger-line"></div>
-          <div class="hamburger-line"></div>
-          <div class="hamburger-line"></div>
-        </div>
-        <img src="./assets/images/logo.svg" alt="Logo Icon" />
-        <nav class="menu hidden">
-          <!-- Menu Here -->
-          <div class="side-menu">
-            <img
-              class="side-menu-img"
-              id="btn-close"
-              src="./assets/images/icon-close.svg"
-              alt="Close icon"
-            />
-            <ul class="menu-item">
-              <li class="menu-list">
-                <a href="#" class="menu-link">Collections</a>
-              </li>
-              <li class="menu-list">
-                <a href="#" class="menu-link">Men</a>
-              </li>
-              <li class="menu-list">
-                <a href="#" class="menu-link">Women</a>
-              </li>
-              <li class="menu-list">
-                <a href="#" class="menu-link">About</a>
-              </li>
-              <li class="menu-list">
-                <a href="#" class="menu-link">Contact</a>
-              </li>
-            </ul>
+      <div class="header-content">
+        <div class="hamburger-logo-group">
+          <div class="hamburger">
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
           </div>
-        </nav>
-      </div>
-      <div class="cart-avatar-group">
-        <div class="cart">
-          <img src="./assets/images/icon-cart.svg" alt="icon cart" />
-          <div class="cart-count">2</div>
-        </div>
-        <img
-          class="profile-img"
-          src="./assets/images/avatar.jpg"
-          alt="Profile Image"
-        />
-      </div>
-      <div class="main-cart hidden">
-        <h3 class="cart-top">Cart</h3>
-        <div class="products-in-cart">
-          <div class="item">
-            <img
-              class="cart-inside-img"
-              src="./assets/images/image-product-1-thumbnail.jpg"
-              alt="product 1 thumb"
-            />
-            <div class="details">
-              <p class="product-name">Autumn Limited Edition...</p>
-              <div class="price-group">
-                <p class="price">$125.00</p>
-                x
-                <p class="count">3</p>
-                <p class="total-amount">$375.00</p>
-              </div>
+          <img src="./assets/images/logo.svg" alt="Logo Icon" />
+          <nav class="menu hidden">
+            <!-- Menu Here -->
+            <div class="side-menu">
+              <img
+                class="side-menu-img"
+                id="btn-close"
+                src="./assets/images/icon-close.svg"
+                alt="Close icon"
+              />
+              <ul class="menu-item">
+                <li class="menu-list">
+                  <a href="#" class="menu-link">Collections</a>
+                </li>
+                <li class="menu-list">
+                  <a href="#" class="menu-link">Men</a>
+                </li>
+                <li class="menu-list">
+                  <a href="#" class="menu-link">Women</a>
+                </li>
+                <li class="menu-list">
+                  <a href="#" class="menu-link">About</a>
+                </li>
+                <li class="menu-list">
+                  <a href="#" class="menu-link">Contact</a>
+                </li>
+              </ul>
             </div>
-            <img
-              id="btn-delete"
-              src="./assets/images/icon-delete.svg"
-              alt="icon delete"
-            />
-          </div>
+          </nav>
         </div>
-        <p class="empty-msg hidden">Your cart is empty</p>
-        <p class="checkout">Checkout</p>
+        <div class="cart-avatar-group">
+          <div class="cart">
+            <img src="./assets/images/icon-cart.svg" alt="icon cart" />
+            <div class="cart-count">2</div>
+          </div>
+          <img
+            class="profile-img"
+            src="./assets/images/avatar.jpg"
+            alt="Profile Image"
+          />
+        </div>
+        <div class="main-cart hidden">
+          <h3 class="cart-top">Cart</h3>
+          <div class="products-in-cart">
+            <div class="item">
+              <img
+                class="cart-inside-img"
+                src="./assets/images/image-product-1-thumbnail.jpg"
+                alt="product 1 thumb"
+              />
+              <div class="details">
+                <p class="product-name">Autumn Limited Edition...</p>
+                <div class="price-group">
+                  <p class="price">$125.00</p>
+                  x
+                  <p class="count">3</p>
+                  <p class="total-amount">$375.00</p>
+                </div>
+              </div>
+              <img
+                id="btn-delete"
+                src="./assets/images/icon-delete.svg"
+                alt="icon delete"
+              />
+            </div>
+          </div>
+          <p class="empty-msg hidden">Your cart is empty</p>
+          <p class="checkout">Checkout</p>
+        </div>
       </div>
     </header>
-    <section class="product-box">
+    <div class="lightbox">
+     
+     <section class="product-content">
       <img
-        src="./assets/images/image-product-1.jpg"
-        alt="First product Image"
-        class="product-img"
-      />
-      <div class="previous slide">
-        <img src="./assets/images/icon-previous.svg" alt="Previous Icon" />
+      src="./assets/images/image-product-1.jpg"
+      alt="First product Image"
+      class="product-img"
+    />
+    <div class="previous slide">
+      <img src="./assets/images/icon-previous.svg" alt="Previous Icon" />
+    </div>
+    <div class="next slide">
+      <img src="./assets/images/icon-next.svg" alt="Next Icon" />
+    </div>
+  </section>
+  <!-- Product -->
+  <section class="product">
+    <div class="product-info">
+      <h2 class="company-name">sneaker company</h2>
+      <h1 class="title">Fall Limited Edition Sneakers</h1>
+      <p class="description">
+        These low-profile sneakers are your perfect casual wear companion.
+        Featuring a durable rubber outer sole, they'll withstand everything
+        the weather can offer.
+      </p>
+    </div>
+    <div class="price-wrapper">
+      <div class="price-together">
+        <span class="price">$125.00</span>
+        <span class="discount">50%</span>
       </div>
-      <div class="next slide">
-        <img src="./assets/images/icon-next.svg" alt="Next Icon" />
-      </div>
-    </section>
-    <!-- Product -->
-    <section class="product">
-      <div class="product-info">
-        <h2 class="company-name">sneaker company</h2>
-        <h1 class="title">Fall Limited Edition Sneakers</h1>
-        <p class="description">
-          These low-profile sneakers are your perfect casual wear companion.
-          Featuring a durable rubber outer sole, they'll withstand everything
-          the weather can offer.
-        </p>
-      </div>
-      <div class="price-wrapper">
-        <div class="price-together">
-          <span class="price">$125.00</span>
-          <span class="discount">50%</span>
-        </div>
-        <span class="main-price">$250.00</span>
+      <span class="main-price">$250.00</span>
+    </div>
+
+    <div class="count-btn-group">
+      <div class="counter-wrapper">
+        <img
+          id="btn-minus"
+          src="./assets/images/icon-plus.svg"
+          alt="icon minus"
+        />
+        <span class="counter">1</span>
+        <img
+          id="btn-plus"
+          src="./assets/images/icon-minus.svg"
+          alt="icon plus"
+        />
       </div>
 
-      <div class="count-btn-group">
-        <div class="counter-wrapper">
-          <img
-            id="btn-minus"
-            src="./assets/images/icon-plus.svg"
-            alt="icon minus"
-          />
-          <span class="counter">1</span>
-          <img
-            id="btn-plus"
-            src="./assets/images/icon-minus.svg"
-            alt="icon plus"
-          />
-        </div>
-
-        <div class="btn-cart">
-          <img
-            class="cart-img"
-            src="./assets/images/icon-cart.svg"
-            alt="icon cart"
-          />
-          <p>Add to cart</p>
-        </div>
+      <div class="btn-cart">
+        <img
+          class="cart-img"
+          src="./assets/images/icon-cart.svg"
+          alt="icon cart"
+        />
+        <p>Add to cart</p>
       </div>
+    </div>
+     </div>
+   
     </section>
 
     <script src="./assets/js/script.js"></script>
