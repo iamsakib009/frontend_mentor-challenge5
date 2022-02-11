@@ -14,6 +14,9 @@ const productCounter = document.querySelector(".counter");
 const mainImg = document.querySelector(".product-img");
 const thumbSingleImg = document.querySelectorAll(".image");
 
+// Previousbtn & NextBtn
+const prevBtn = document.querySelector(".previous");
+const nextBtn = document.querySelector(".next");
 // Initial count
 let counterValue = 1;
 
@@ -44,7 +47,6 @@ plusBtn.addEventListener("click", () => {
 minusBtn.addEventListener("click", () => {
   setProductCounter(-1);
 });
-// thumb Image
 
 // Functions
 const setProductCounter = (value) => {
@@ -62,6 +64,8 @@ const onThumbSingleImgClick = (event) => {
   // update main image
   mainImg.src = event.target.src.replace("-thumbnail", "");
 };
+
+// thumb Image
 thumbSingleImg.forEach((img) => {
   img.addEventListener("click", onThumbSingleImgClick);
 });
